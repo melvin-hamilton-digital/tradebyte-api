@@ -1,5 +1,16 @@
 # Tradebyte API
 
+## API documentation
+
+https://www.tradebyte.io/documentation/
+
+## Current features
+
+* order data exchange,
+* stock data exchange,
+* order messages,
+* product and article csv feed generation.
+
 ## Example usage
 
 ```php
