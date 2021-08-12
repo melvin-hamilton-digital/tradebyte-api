@@ -1,0 +1,23 @@
+{
+  "name": "melvin-hamilton-digital/tradebyte-api",
+  "require": {
+    "php": "^7.2",
+    "ext-SimpleXML": "*",
+    "psr/http-client": "^1.0",
+    "guzzlehttp/psr7": "^2.0",
+    "symfony/serializer": "^4|^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "MHD\\Tradebyte\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}
