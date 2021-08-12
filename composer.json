@@ -1,8 +1,9 @@
 {
   "name": "melvin-hamilton-digital/tradebyte-api",
+  "description": "Tradebyte API integration",
   "license": "MIT",
   "require": {
-    "php": "^7.2",
+    "php": ">=7.2",
     "ext-SimpleXML": "*",
     "psr/http-client": "^1.0",
     "guzzlehttp/psr7": "^2.0",
