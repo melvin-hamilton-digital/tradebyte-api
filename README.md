@@ -29,7 +29,7 @@ $tradebyteClient = new TradebyteClient($httpClient);
 
 # process orders
 $response = $orders$tradebyteClient->getOrders('chxx');
-foreach (new OrdersList($response->getBody()->getContents) as $order) {
+foreach (new OrdersList($response->getBody()->getContents()) as $order) {
 # ...
 }
 
