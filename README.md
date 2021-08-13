@@ -18,6 +18,7 @@ use GuzzleHttp\Client as HttpClient;
 use MHD\Tradebyte\Api\Client as TradebyteClient;
 use MHD\Tradebyte\Data\Message;
 use MHD\Tradebyte\Data\MessagesList;
+use MHD\Tradebyte\Data\OrdersList;
 use MHD\Tradebyte\Data\Stock;
 
 $httpClient = new HttpClient([
@@ -27,8 +28,8 @@ $httpClient = new HttpClient([
 $tradebyteClient = new TradebyteClient($httpClient);
 
 # process orders
-$orders = $orders$tradebyteClient->getOrders('chxx');
-foreach ($orders as $order) {
+$response = $orders$tradebyteClient->getOrders('chxx');
+foreach (new OrdersList($response->getBody()->getContents) as $order) {
 # ...
 }
 

@@ -22,21 +22,21 @@ class Client
 
     public function sendMessages(MessagesList $messagesList): ResponseInterface
     {
-        $request = new Request('POST', '/messages/', [], $messagesList->asXml());
+        $request = new Request('POST', 'messages/', [], $messagesList->asXml());
 
         return $this->client->sendRequest($request);
     }
 
     public function sendStock(Stock $stock): ResponseInterface
     {
-        $request = new Request('POST', '/articles/stock', [], $stock->asXml());
+        $request = new Request('POST', 'articles/stock', [], $stock->asXml());
 
         return $this->client->sendRequest($request);
     }
 
     public function getOrders(string $channel): ResponseInterface
     {
-        $request = new Request('GET', "/orders/?channel={$channel}");
+        $request = new Request('GET', "orders/?channel={$channel}");
 
         return $this->client->sendRequest($request);
     }
