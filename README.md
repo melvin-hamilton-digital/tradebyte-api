@@ -1,5 +1,7 @@
 # Tradebyte API
 
+[![build](https://img.shields.io/github/workflow/status/melvin-hamilton-digital/tradebyte-api/PHP%20Composer)](https://github.com/melvin-hamilton-digital/tradebyte-api/actions)
+
 ## API documentation
 
 https://www.tradebyte.io/documentation/
