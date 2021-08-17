@@ -54,6 +54,9 @@ $tradebyteClient->sendStock($stock);
 
 ## Product CSV feed
 
+Library provides [`MHD\Tradebyte\Data\Csv\Product`](./src/Data/Csv/Product.php) class which is meant to be used
+with `symfony/serializer` in order to simplify and streamline Tradebyte product CSV feed generation.
+
 ```php
 use MHD\Tradebyte\Data\Csv\Product;
 use Symfony\Component\Serializer\Encoder\CsvEncoder;
@@ -76,6 +79,9 @@ echo $serializer->serialize([$product], 'csv');
 ```
 
 ## Article CSV feed
+
+Library provides [`MHD\Tradebyte\Data\Csv\Artilce`](./src/Data/Csv/Article.php) class which is meant to be used
+with `symfony/serializer` in order to simplify and streamline Tradebyte article CSV feed generation.
 
 ```php
 use MHD\Tradebyte\Data\Csv\Article;
